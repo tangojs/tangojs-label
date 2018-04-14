@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<link rel="import" href="../polymer/polymer-element.html">
+<!--link rel="import" href="html-led-element.html"-->
+<!--link rel="import" href="assets/tangojs-common-css.html"
+  id="tangojs-common-css"-->
+<link rel="import" href="../tangojs-polymer/with-tango-attribute.html">
+
+<dom-module id="tangojs-label">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    /*#root {
+      grid-template-columns: 1fr 1fr 1fr 30px 20px;
+    }
+    #name  { grid-column: 1; }
+    #value { grid-column: 2; }
+    #input { grid-column: 3; }
+    #unit  { grid-column: 4; }
+    #led   { grid-column: 5; }*/
+    </style>
+
+    <div id="root" class="tangojs-form-row">
+      <span id="name">[[info.label]]</span>
+      <span id="value" style$="background-color: [[qualityColor]]">[[attribute.value]]</span>
+      <span id="unit">[[unit]]</span>
+      <x-led id="led"></x-led>
+    </div>
+  </template>
+
+  <script>
+    /**
+     * `tangojs-label`
+     * TangoJS Label
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class TangojsLabel extends Tangojs.withTangoAttribute(Polymer.Element) {
+      static get is() { return 'tangojs-label'; }
+    }
+
+    window.customElements.define(TangojsLabel.is, TangojsLabel);
+  </script>
+</dom-module>
+
