@@ -3,7 +3,7 @@
 <!--link rel="import" href="html-led-element.html"-->
 <!--link rel="import" href="assets/tangojs-common-css.html"
   id="tangojs-common-css"-->
-<script src="node_modules/tangojs-web-components/dist/tangojs-web-components.js"></script>
+<link rel="import" href="../tangojs-polymer/with-tango-attribute.html">
 
 <dom-module id="tangojs-label">
   <template>
@@ -38,7 +38,7 @@
      * @polymer
      * @demo demo/index.html
      */
-    class TangojsLabel extends tangojs.web.util.mixins.withTangoAttribute(Polymer.Element) {
+    class TangojsLabel extends Tangojs.withTangoAttribute(Polymer.Element) {
       static get is() { return 'tangojs-label'; }
     }
 
