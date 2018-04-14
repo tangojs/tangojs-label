@@ -1,9 +1,21 @@
 {
   "name": "tangojs-label",
-  "description": "TangoJS Label connected to a Stri",
+  "version": "0.1.0",
+  "description": "TangoJS Label connected to a String",
+  "authors": [
+    "Vincent Hardion <vincent.hardion@maxiv.lu.se>"
+  ],
+  "keywords": [
+    "web-component",
+    "polymer",
+    "tangojs"
+  ],
+  "license": "https://raw.githubusercontent.com/tangojs/tangojs-label/master/LICENSE",
+  "homepage": "https://github.com/tangojs/tangojs-label/",
   "main": "tangojs-label.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^2.0.0"
+    "polymer": "Polymer/polymer#^2.0.0",
+    "tangojs-polymer": "^0.1.0"
   },
   "devDependencies": {
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
